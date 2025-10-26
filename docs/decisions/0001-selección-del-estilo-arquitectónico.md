@@ -26,11 +26,11 @@ Chosen option: "Estilo por Microservicios", because Dentro de nuestro contexto, 
 
 * División de la lógica de negocio en microservicios con bajo acomplamiento.
 * Al ser módulos aislados, el diseño de cada microservicio será más cómodo.
-* Fallos aislados que no afectan a áreas completas de la lógica de negocio.
+* Fallos aislados que en un servicio no comprometerían al resto de servicios de la lógica de negocio.
 
 ### Negative Consequences
 
-* Para trabajar con servicios de terceros será necesario implementar un microservicio específico que comunique el microservicio adecuado con el servicio externo.
+* Para trabajar con servicios de terceros como STRIPE o la plataforma de tráfico será necesario implementar un microservicio específico que comunique el microservicio adecuado con el servicio externo.
 
 ## Pros and Cons of the Options
 
@@ -50,7 +50,7 @@ División de la lógica de negocio en servicios muy pequeños.
 
 * Good, because La lógica de negocio de nuetro contexto se puede dividir en microservicios, incluso las diferentes áreas de las que el enunciado habla pueden subdividirse en microservicios en lugar de hacer una correspondencia directa área-servicio.
 * Good, because Muy sencillo añadir nuevos servicios o módulos
-* Good, because .Errores aislados, al estar las funciones de la lógica de negocio separadas en microservicios.
+* Good, because los errores son aislados al estar las funciones de la lógica de negocio separadas en microservicios.
 * Bad, because Comunicación con terceros complicada: cada microservicio debe integrarse con el servicio de terceros o incluso necesitarse un microservicio dedicado a la comunicación externa.
 
 ### Estilo Cliente-Servidor
@@ -60,4 +60,4 @@ Estilo arquitectónico en el que un servidor ofrece el servicio y un cliente le 
 * Good, because La centralización encaja en nuestro contexto porque se trata de ofrecer un servicio de compra-venta y seguimiento de pedidos a un conjunto de clientes.
 * Bad, because Arquitectura monolítica: la lógica de negocio está en el servidor y no se adapta a las diferentes áreas que menciona el enunciado.
 * Bad, because Integración con terceros muy complicada, al tener que integrarse el sistema completo y no sólo un módulo.
-* Bad, because Si un área de la lógica de negocio falla, puede afectar a todo el sistema.
+* Bad, because Si un área de la lógica de negocio falla, el resto de servicios del sistema se verán afectados.
