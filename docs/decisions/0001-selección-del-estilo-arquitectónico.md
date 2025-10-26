@@ -1,6 +1,6 @@
 # Selección del Estilo Arquitectónico
 
-* Status: proposed
+* Status: accepted
 * Deciders: Marcos Hernández Martín y Daniel Hernanz Corral
 * Date: 2025-10-25
 
