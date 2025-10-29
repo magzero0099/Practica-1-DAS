@@ -1,6 +1,6 @@
-# Patrón de Diseño 1 Fases Pedidos
+d# Patrón de Diseño 1 Fases Pedidos
 
-* Status: proposed
+* Status: accepted
 * Date: 2025-10-29
 
 ## Context and Problem Statement
