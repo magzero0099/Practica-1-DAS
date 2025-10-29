@@ -1,6 +1,6 @@
 # Selección del Estilo Arquitectónico
 
-* Status: accepted
+* Status: proposed
 * Deciders: Marcos Hernández Martín y Daniel Hernanz Corral
 * Date: 2025-10-25
 
@@ -20,7 +20,7 @@ Diseñar una aplicación que gestione los procesos de compra de la compañía y 
 
 ## Decision Outcome
 
-Chosen option: "Estilo por Microservicios", because Dentro de nuestro contexto, se utilizará para convertir cada una de las áreas de lógica de negocio descritas en el enunciado en uno o varios microservicios dependiendo de la complejidad del área.
+Chosen option: "Estilo Cliente-Servidor", because En un contexto en el que los requisitos no funcionales no son relevantes, un estilo arquitectónico de microservicios o SOA quedaría pobre al orientarse sus patrones principalmente de esta clase de requisitos.
 
 ### Positive Consequences
 
@@ -52,12 +52,14 @@ División de la lógica de negocio en servicios muy pequeños.
 * Good, because Muy sencillo añadir nuevos servicios o módulos
 * Good, because los errores son aislados al estar las funciones de la lógica de negocio separadas en microservicios.
 * Bad, because Comunicación con terceros complicada: cada microservicio debe integrarse con el servicio de terceros o incluso necesitarse un microservicio dedicado a la comunicación externa.
+* Bad, because Generaría problemas de diseño adicionales para gestionar correctamente los microservicios.
+* Bad, because Los patrones de diseño de microservicios se orientan en su mayoría en requsitos no funcionales, los cuales no son relevantes en nuestro problema.
 
 ### Estilo Cliente-Servidor
 
 Estilo arquitectónico en el que un servidor ofrece el servicio y un cliente le realiza peticiones.
 
 * Good, because La centralización encaja en nuestro contexto porque se trata de ofrecer un servicio de compra-venta y seguimiento de pedidos a un conjunto de clientes.
-* Bad, because Arquitectura monolítica: la lógica de negocio está en el servidor y no se adapta a las diferentes áreas que menciona el enunciado.
+* Good because, porque podemos diseñar un monolito que contenga los diferentes módulos como clases con responsabilidad.
+* Bad, because Arquitectura monolítica: la lógica de negocio está en el servidor. Aunque se pueda modularizar la lógica de negocio, el acoplamiento es muy alto.
 * Bad, because Integración con terceros muy complicada, al tener que integrarse el sistema completo y no sólo un módulo.
-* Bad, because Si un área de la lógica de negocio falla, el resto de servicios del sistema se verán afectados.
