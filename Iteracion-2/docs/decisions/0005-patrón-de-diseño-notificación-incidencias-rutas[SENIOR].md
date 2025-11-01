@@ -7,7 +7,7 @@
 ## Context and Problem Statement
 
 La aplicación permite reportar incidencias ocurridas en el transporte de mercancía, por ejemplo, camión averiado o reparto no realizado.
-Además de la incidencia, se guardarán la fecha y hora y el estado de la incidencia (resuelta, en tratamiento, no resuelta). Necesitamos notificar a los gestores de rutas cuando se produzca una incidencia.
+Además de la incidencia, se guardarán la fecha y hora y el estado de la incidencia (resuelta, en tratamiento, no resuelta). Necesitamos notificar a los gestores de rutas cuando se produzca una incidencia para que estén informados lo antes posible.
 
 ## Decision Drivers
 
