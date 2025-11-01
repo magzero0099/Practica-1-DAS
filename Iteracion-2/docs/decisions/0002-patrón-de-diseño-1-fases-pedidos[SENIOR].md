@@ -1,6 +1,7 @@
-d# Patrón de Diseño 1 Fases Pedidos
+# Patrón de Diseño 1 Fases Pedidos
 
 * Status: accepted
+* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-10-29
 
 ## Context and Problem Statement

@@ -1,6 +1,7 @@
 # Patrón de Diseño Algoritmos Decisión de Rutas
 
 * Status: proposed
+* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-10-29
 
 ## Context and Problem Statement
