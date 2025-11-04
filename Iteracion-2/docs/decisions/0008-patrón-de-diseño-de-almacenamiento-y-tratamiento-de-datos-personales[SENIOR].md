@@ -10,7 +10,7 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Decision Drivers
 
-* RF1
+* RF2
 * RF3
 
 ## Considered Options
