@@ -10,26 +10,29 @@ La realización de los pedidos se dividirá en fases con un orden fijo sin opci�
 
 ## Decision Drivers
 
-* RF4
+* RF4 División en fases de los pedidos.
 
 ## Considered Options
 
 * Chain of Responsability
 * State
 * Template Method
+* Strategy
 
 ## Decision Outcome
 
-Chosen option: "State", because Se van a controlar en todo momento las transiciones entre estados, por lo que no se darán transiciones incorrectas o indeseadas.
+Chosen option: "State", because Permite al objeto saber la fase en la que se encuentra y define transiciones controladas y ordenadas
 
 ### Positive Consequences
 
 * Control absoluto sobre las transiciones
-* Es fácil controlar en qué estado se encuentra el pedido.
+* Es fácil controlar en qué fase se encuentra el pedido.
+* Permite añadir estados sin modificar la clase pedido
 
 ### Negative Consequences
 
-* No es posible establecer comportamiento para cada uno de los estados.
+* Requiere implementar y mantener una clase por cada fase
+* La interfaz común causa poca flexibilidad
 
 ## Pros and Cons of the Options
 
@@ -51,7 +54,7 @@ Patrón de diseño de comportamiento que permite alterar el comportamiento de un
 * Good, because Garantiza que los pedidos avancen al siguiente estado permitido, sin posibilidad de vuelta atrás.
 * Good, because Es más sencillo controlar en qué estado se encuentra el pedido.
 * Bad, because Más cantidad de clases, al ser cada clase un estado.
-* Bad, because Sólo controla las transiciones entre estados: no define el comprtamiento de cada uno de ellos.
+* Bad, because Poca flexibilidad para añadir funciones
 
 ### Template Method
 
@@ -59,4 +62,17 @@ Patrón de diseño de comportamiento que define la estructura de una algoritmo, 
 
 * Good, because Código reutilizable.
 * Good, because Garantiza el orden entre fases.
+* Good, because No utiliza una interfaz común, más flexible
 * Bad, because Difícil de probar individualmente.
+* Bad, because Requiere cambiar la clase del pedido según su fase
+
+### Strategy
+
+Permite definir varios algoritmos entre los que el objeto puede decidir en tiempo de ejecución
+
+* Good, because Permite cambiar de algoritmo facilmente
+* Good, because Reduce el acoplamiento
+* Good, because Permite añadir algoritmos sin modificar el pedido u otros algoritmos
+* Bad, because No guarda información de la fase en la que se encuentra
+* Bad, because El objeto debe gestionar las transiciones de fase
+* Bad, because Requiere implementar y mantener varias clases
