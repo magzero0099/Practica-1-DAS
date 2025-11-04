@@ -24,6 +24,8 @@ Chosen option: "Patrón observer", because Encaja perfectamente con la notificac
 ### Positive Consequences
 
 * Asegura la notificación de incidencias en tiempo real
+* Limita el numero de consultas de los suscriptores
+* Permite actualizar automáticamente la página según se reciben notificaciones
 
 ## Pros and Cons of the Options
 
@@ -31,6 +33,7 @@ Chosen option: "Patrón observer", because Encaja perfectamente con la notificac
 
 Patrón de diseño de comportamiento que permite lanzar notificaciones para que la reciban los suscriptores que estén interesados.
 
-* Good, because El emisor de incidencias no necesita conocer a los gestores, solo los notifica
-* Good, because Cada gestor decide qué hacer cuando recibe la notificación
-* Bad, because Si ocurren muchas incidencias pueden haber demasiadas notificaciones que pueden saturar el sistema.
+* Good, because El emisor de incidencias no necesita conocer a los gestores, solo los notifica.
+* Good, because Cada gestor decide qué hacer cuando recibe la notificación.
+* Good, because Evita que los gestores sobrecarguen con consultas la plataforma de incidencias.
+* Bad, because Si ocurren muchas incidencias puede haber demasiadas notificaciones que pueden saturar el sistema.

@@ -10,8 +10,9 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Decision Drivers
 
-* RF2
-* RF3
+* RF2 Almacenamiento y tratamiento de los datos personales de los clientes.
+* RF3 Almacenamiento y tratamiento de los pedidos de los clientes.
+
 
 ## Considered Options
 

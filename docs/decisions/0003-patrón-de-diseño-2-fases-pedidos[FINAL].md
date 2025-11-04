@@ -10,7 +10,7 @@ La realización de los pedidos se dividirá en fases con un orden fijo sin opci�
 
 ## Decision Drivers
 
-* RF4
+* RF4 Almacenamiento y tratamiento de los pedidos de los 
 
 ## Considered Options
 
