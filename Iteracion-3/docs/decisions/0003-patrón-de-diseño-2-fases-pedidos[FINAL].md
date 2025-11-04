@@ -1,6 +1,6 @@
 # Patrón de Diseño 2 Fases Pedidos
 
-* Status: proposed
+* Status: accepted
 * Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-10-29
 
