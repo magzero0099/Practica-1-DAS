@@ -1,8 +1,8 @@
 # Patrón de diseño de almacenamiento y tratamiento de datos personales
 
 * Status: accepted
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
-* Date: 2025-11-01
+* Deciders: Gonzalo Fernández de Córdoba García y Rodrigo Fernández de Córdoba García
+* Date: 2025-11-05
 
 ## Context and Problem Statement
 
