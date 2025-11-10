@@ -41,7 +41,7 @@ Chosen option: "Acceso a un singleton mediante proxy", because no requiere que e
 Crear un proxy que controle el acceso a la base de datos, que es un singleton, gestionando accesos concurrentes de varios procesos y clientes, permisos del usuario y disponibilidad del singleton
 
 * Good, because Permite que varios elementos o clientes llamen a la base de datos sin que el singleton o el cliente tengan que gestionar la concurrencia o los conflictos
-* Good, because Permite comprobar permisos desde el backed antes de acceder a la base de datos
+* Good, because Permite comprobar permisos desde el backend antes de acceder a la base de datos
 * Bad, because introduce latencia
 * Bad, because Si se concentra demasiada funcionalidad en la clase Singleton, se rompe el principio de responsabilidad única, haciendo la clase difícil de mantener.
 
