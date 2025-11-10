@@ -27,7 +27,7 @@ Chosen option: "Acceso a un singleton mediante proxy", because no requiere que e
 * Se reutiliza la misma conexión durante la vida de la aplicación, reduciendo el número de apertura y cierre de conexiones con el sistema de guardado.
 * Se pueden instanciar varios procesos que accedan a la base de datos y que el Proxy gestione el acceso.
 * Permite hacer "caching" en el proxy (ejemplo: El proxy guarda los datos de tu perfil o numero de usuarios de la aplicación), reduciendo el tráfico a la base de datos.
-* Permite hacer copias de seguridad y que el proxy cuando se clonan los datos
+* Permite hacer copias de seguridad de modo que el proxy controle el acceso mientras se clonan los datos.
 * Permite utilizar almacenes de apoyo si se cae el principal.
 
 ### Negative Consequences
