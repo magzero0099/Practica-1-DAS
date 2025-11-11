@@ -1,6 +1,6 @@
 # Patrón de diseño notificación incidencias rutas
 
-* Status: accepted
+* Status: rejected
 * Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-11-01
 
