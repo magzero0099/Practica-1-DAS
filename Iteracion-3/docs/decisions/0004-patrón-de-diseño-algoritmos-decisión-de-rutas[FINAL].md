@@ -1,7 +1,7 @@
 # Patrón de Diseño Algoritmos Decisión de Rutas
 
 * Status: accepted
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Deciders: Gonzalo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-10-29
 
 ## Context and Problem Statement
@@ -10,7 +10,7 @@ La aplicación ejecutará uno de los dos algoritmos de decisión en función del
 
 ## Decision Drivers
 
-* RF5.1
+* RF5.1 Selección de algoritmo de decisión de rutas de transporte
 
 ## Decision Outcome
 

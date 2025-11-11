@@ -1,7 +1,7 @@
 # Patrón de diseño de area de incidencias
 
-* Status: proposed
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Status: accepted
+* Deciders: Gonzalo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-11-04
 
 ## Context and Problem Statement
@@ -10,7 +10,7 @@ La aplicación implementará un área de gestión de rutas e incidencias, a la c
 
 ## Decision Drivers
 
-* RF7
+* RF7 Área de gestión de rutas e incidencias.
 
 ## Considered Options
 
@@ -24,6 +24,10 @@ Chosen option: "Patrón proxy", because permite controlar el acceso al área de 
 
 * No se puede acceder al área de gestión hasta que el proxy valide el acceso
 
+### Negative Consequences
+
+* Requiere implementar funciones intermediarias en el proxy
+
 ## Pros and Cons of the Options
 
 ### Patrón proxy
@@ -32,3 +36,4 @@ Patrón de diseño estructural que proporciona un sustituto o marcador de posici
 
 * Good, because Evita que usuarios normales entren al área de gestión
 * Good, because Facilita el mantenimiento ya que si cambian las reglas de acceso (por ejemplo, roles nuevos), solo se modifica el Proxy.
+* Bad, because Hay que crear funciones intermedias en el Proxy para redirigir a las operaciones correspondientes en la incidencia (más código que mantener)
