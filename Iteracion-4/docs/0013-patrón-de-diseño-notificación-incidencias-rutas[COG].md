@@ -1,7 +1,7 @@
 # Patrón de diseño notificación incidencias rutas
 
-* Status: proposed
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Status: accepted
+* Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-11-11
 
 ## Context and Problem Statement
@@ -27,7 +27,7 @@ Chosen option: "Publisher-Subscriber", because Encaja perfectamente con la notif
 
 ## Pros and Cons of the Options
 
-### Patrón observer
+### Patrón publisher-subscriber
 
 Patrón de diseño de comportamiento que permite lanzar notificaciones para que la reciban los suscriptores que estén interesados, ubicándose estos en sistemas separados.
 
