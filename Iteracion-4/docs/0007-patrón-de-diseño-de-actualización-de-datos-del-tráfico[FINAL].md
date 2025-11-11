@@ -1,8 +1,8 @@
 # Patrón de diseño actualización de datos del tráfico
 
 * Status: rejected
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
-* Date: 2025-11-01
+* Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernandez Martín
+* Date: 2025-11-11
 
 ## Context and Problem Statement
 

@@ -1,7 +1,7 @@
 # Patrón de diseño notificación incidencias rutas
 
-* Status: rejected
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Status: Rejected
+* Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-11-01
 
 ## Context and Problem Statement

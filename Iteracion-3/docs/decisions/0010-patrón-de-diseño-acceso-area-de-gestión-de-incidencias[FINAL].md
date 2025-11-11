@@ -1,7 +1,7 @@
 # Patrón de diseño de area de incidencias
 
 * Status: accepted
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Deciders: Gonzalo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-11-04
 
 ## Context and Problem Statement

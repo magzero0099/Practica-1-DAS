@@ -1,7 +1,8 @@
 # Patron diseño info tiempo real estadisticas
 
-* Status: proposed
-* Date: 2025-11-05
+* Status: rejected
+* Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernandez Martín
+* Date: 2025-11-11
 
 ## Context and Problem Statement
 
@@ -23,6 +24,9 @@ Chosen option: "Patrón Observer", because permite notificar cambios en la ubica
 ### Positive Consequences
 
 * El sistema siempre muestra información actualizada
+* Se pueden aportar los datos del sistema de tráfico externo para el cálculo de tiempo restante
+* El sistema permite enviar notificaciones a los clientes sobre sus pedidos. (Se ha entregado, está en reparto...) sin que tengan que acceder al área de estadísticas
+
 
 ## Pros and Cons of the Options
 
@@ -32,4 +36,5 @@ Patrón de diseño de comportamiento que permite notificar en tiempo real inform
 
 * Good, because Los clientes reciben información en tiempo real aceca de los camiones y del estado del pedido sin necesidad de realizar consultas constantes.
 * Good, because Los clientes reciben información en tiempo real aceca de los pedidos sin necesidad de realizar consultas constantes.
-* Bad, because Si se conectan muchos clientes al módulo de estadisticas, pueden haber demasiados suscriptores que saturen el sistema.
+* Bad, because Si se conectan muchos clientes al módulo de estadisticas, puede haber demasiados suscriptores que saturen el sistema.
+* Bad, because si se producen demasiados cambios de ruta o entregas se puede saturar el sistema de notificaciones
