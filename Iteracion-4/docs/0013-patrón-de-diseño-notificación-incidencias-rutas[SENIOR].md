@@ -27,7 +27,7 @@ Chosen option: "Publisher-Subscriber", because Encaja perfectamente con la notif
 
 ## Pros and Cons of the Options
 
-### Patrón observer
+### Publisher-Subscriber
 
 Patrón de diseño de comportamiento que permite lanzar notificaciones para que la reciban los suscriptores que estén interesados, ubicándose estos en sistemas separados.
 

@@ -1,6 +1,6 @@
 # Patrón de diseño de almacenamiento y tratamiento de datos personales
 
-* Status: accepted
+* Status: rejected
 * Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-11-01
 

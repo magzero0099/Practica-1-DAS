@@ -1,7 +1,7 @@
-# Patrón de diseño de almacenamiento y tratamiento de datos personales
+# Patrón de diseño de acceso al almacenamiento de datos personales
 
-* Status: proposed
-* Deciders: Daniel Hernanz Corral y Marcos Hernandez Martín
+* Status: rejected
+* Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernandez Martín
 * Date: 2025-11-01
 
 ## Context and Problem Statement
@@ -15,16 +15,20 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Considered Options
 
-* Patrón adapter
 * Patrón Singleton
+* Acceso a un singleton mediante proxy
 
 ## Decision Outcome
 
-Chosen option: "Patrón Singleton", because garantiza que exista una única instancia de conexión al sistema de almacenamiento, centralizando la gestión de los clientes y pedidos almacenados.
+Chosen option: "Acceso a un singleton mediante proxy", because no requiere que el almacen de datos gestione el acceso ni los permisos manteniendo las ventajas de tener 1 único objeto de la base de datos en memoria
 
 ### Positive Consequences
 
 * Se reutiliza la misma conexión durante la vida de la aplicación, reduciendo el número de apertura y cierre de conexiones con el sistema de guardado.
+* Se pueden instanciar varios procesos que accedan a la base de datos y que el Proxy gestione el acceso.
+* Permite hacer "caching" en el proxy (ejemplo: El proxy guarda los datos de tu perfil o numero de usuarios de la aplicación), reduciendo el tráfico a la base de datos.
+* Permite hacer copias de seguridad de modo que el proxy controle el acceso mientras se clonan los datos.
+* Permite utilizar almacenes de apoyo si se cae el principal.
 
 ### Negative Consequences
 
@@ -32,12 +36,15 @@ Chosen option: "Patrón Singleton", because garantiza que exista una única inst
 
 ## Pros and Cons of the Options
 
-### Patrón adapter
+### Proxy+Singleton
 
-Patrón de diseño estructural que permite comunicar el sistema de almacenamiento con nuestra aplicación a través de una interfaz.
+Crear un proxy que controle el acceso a la base de datos, que es un singleton, gestionando accesos concurrentes de varios procesos y clientes, permisos del usuario y disponibilidad del singleton
 
-* Good, because En el caso de que los datos personales tengan que ser guardados en otro formato, el patrón adapter traduciría ese formato al usado en la aplicación evitando errores de incompatibilidad.
-* Bad, because Cada cambio en la base de datos o en la estructura de datos puede requerir actualizar el adaptador.
+* Good, because Permite que varios elementos o clientes llamen a la base de datos sin que el singleton o el cliente tengan que gestionar la concurrencia o los conflictos
+* Good, because Permite comprobar permisos desde el backend antes de acceder a la base de datos
+* Bad, because introduce latencia
+* Bad, because Si se concentra demasiada funcionalidad en la clase Singleton, se rompe el principio de responsabilidad única, haciendo la clase difícil de mantener.
+
 
 ### Patrón Singleton
 
