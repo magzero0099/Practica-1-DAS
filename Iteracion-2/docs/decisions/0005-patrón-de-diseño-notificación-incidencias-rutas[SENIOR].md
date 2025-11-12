@@ -11,7 +11,7 @@ Además de la incidencia, se guardarán la fecha y hora y el estado de la incide
 
 ## Decision Drivers
 
-* RF7.2
+* RF7.2 Notificar incidencias ocurridas
 
 ## Considered Options
 

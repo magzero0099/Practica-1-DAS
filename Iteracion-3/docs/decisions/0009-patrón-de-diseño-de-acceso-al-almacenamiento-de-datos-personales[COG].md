@@ -9,9 +9,9 @@
 La aplicación almacenará los datos personales del cliente: ID, nombre, apellidos y correo electrónico; y dará opciones de tratamiento: consulta y modificación y los pedidos de los clientes: ID, lista de productos, peso del bulto y fase en la que se encuentra; y permitirá opciones de tratamiento: consulta y devolución. La aplicación podra usar estos datos obteniendolos del sistema de almacenamiento.
 
 ## Decision Drivers
-
-* RF2
-* RF3
+ 
+* RF2 Almacenamiento y tratamiento de los datos personales de los clientes.
+* RF3 Almacenamiento y tratamiento de los pedidos de los clientes.
 
 ## Considered Options
 

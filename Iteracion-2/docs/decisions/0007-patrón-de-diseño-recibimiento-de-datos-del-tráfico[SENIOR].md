@@ -10,7 +10,7 @@ La aplicación recibe y manipula datos de tráfico en tiempo real desde un servi
 
 ## Decision Drivers
 
-* RF5.2
+* RF5.2 Recibir información del tráfico desde un servicio externo
 
 ## Considered Options
 
