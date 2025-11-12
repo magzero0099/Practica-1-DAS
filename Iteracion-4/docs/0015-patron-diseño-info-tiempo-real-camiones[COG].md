@@ -24,9 +24,8 @@ Chosen option: "Patrón Publish-Subscriber", because permite notificar cambios e
 ### Positive Consequences
 
 * El sistema siempre muestra información actualizada
-* Se pueden aportar los datos del sistema de tráfico externo para el cálculo de tiempo restante
+* Se pueden aportar los datos del sistema de tráfico externo para el cálculo de tiempo restante al cliente
 * El sistema permite enviar notificaciones a los clientes sobre sus pedidos. (Se ha entregado, está en reparto...) sin que tengan que acceder al área de estadísticas
-
 
 ## Pros and Cons of the Options
 
@@ -34,7 +33,6 @@ Chosen option: "Patrón Publish-Subscriber", because permite notificar cambios e
 
 Patrón de diseño de comportamiento que permite notificar en tiempo real información acerca de los camiones y estados de los pedidos. Los suscriptores serán los clientes que se conecten al módulo de estadísticas, mientras que el notificador será el servidor de nuestro sistema.
 
-* Good, because Los clientes reciben información en tiempo real aceca de los camiones y del estado del pedido sin necesidad de realizar consultas constantes.
-* Good, because Los clientes reciben información en tiempo real aceca de los pedidos sin necesidad de realizar consultas constantes.
+* Good, because Los clientes reciben información en tiempo real acerca de los camiones y del estado del pedido sin necesidad de realizar consultas constantes.
 * Bad, because Si se conectan muchos clientes al módulo de estadisticas, puede haber demasiados suscriptores que saturen el sistema.
-* Bad, because si se producen demasiados cambios de ruta o entregas se puede saturar el sistema de notificaciones
+* Bad, because si se producen demasiados cambios de ruta o entregas se puede saturar el sistema de notificaciones.
