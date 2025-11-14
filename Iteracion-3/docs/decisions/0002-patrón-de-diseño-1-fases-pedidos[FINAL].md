@@ -58,7 +58,7 @@ Patrón de diseño de comportamiento que permite alterar el comportamiento de un
 
 ### Template Method
 
-Patrón de diseño de comportamiento que define la estructura de una algoritmo, permitiendo que las sublcases sobrescriban los pasos del algoritmo sin alterar la estructura.
+Patrón de diseño de comportamiento que define la estructura de un algoritmo, permitiendo que las sublcases sobrescriban los pasos del algoritmo sin alterar la estructura.
 
 * Good, because Código reutilizable.
 * Good, because Garantiza el orden entre fases.

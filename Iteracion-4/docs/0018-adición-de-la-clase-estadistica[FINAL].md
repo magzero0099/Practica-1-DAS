@@ -21,12 +21,12 @@ Necesitamos encontrar alguna manera de modularizar el acceso a las estadísticas
 
 ## Decision Outcome
 
-Chosen option: "Representar módulo de estadísticas mediante una clase", because permite centralizar la lógica y los datos estadísticos en un único punto del sistema, mejorando la mantenibilidad, la coherencia y la escalabilidad del código.
+Chosen option: "Representar módulo de estadísticas mediante una clase", because permite centralizar la lógica y los datos estadísticos en un único punto del sistema, mejorando la mantenibilidad y la coherencia.
 
 ### Positive Consequences
 
 * Se garantiza una estructura coherente y modular para el manejo de las estadísticas del sistema.
-* Se facilita la evolución y optimización de las estadísticas al unificarse en un único punto, lo que mejora la escalabilidad
+* Se facilita la evolución y optimización de las estadísticas al unificarse en un único punto.
 * Facilita la realización de pruebas en el módulo de estadísticas, al estar concentrado alrededor de esta clase
   
 ### Negative Consequences
