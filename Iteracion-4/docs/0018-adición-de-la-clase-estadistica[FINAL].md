@@ -1,7 +1,7 @@
 # Adición-de-la-clase-Estadistica
 
 * Status: proposed
-* Deciders: Marcos Hernández Martín, Daniel Hernanz Corral
+* Deciders: Marcos Hernández Martín, Daniel Hernanz Corral y Gonzalo Fernández de Córdoba García
 * Date: 2025-11-12
 
 ## Context and Problem Statement
@@ -26,10 +26,13 @@ Chosen option: "Representar módulo de estadísticas mediante una clase", becaus
 ### Positive Consequences
 
 * Se garantiza una estructura coherente y modular para el manejo de las estadísticas del sistema.
-
+* Se facilita la evolución y optimización de las estadísticas al unificarse en un único punto, lo que mejora la escalabilidad
+* Facilita la realización de pruebas en el módulo de estadísticas, al estar concentrado alrededor de esta clase
+  
 ### Negative Consequences
 
 * Posible incremento en el acoplamiento entre módulos si no se gestionan correctamente las dependencias.
+* Riesgo de crear una clase que concentre demasiada funcionalidad, influyendo negativamente en el acoplamiento
 
 ## Pros and Cons of the Options
 
@@ -39,4 +42,5 @@ Se representará el módulo de estadísticas del sistema mediante una clase que 
 
 * Good, because Implementación sencilla
 * Good, because Acceso directo, sin intermediarios, a los datos de estadísticas.
+* Facilita realización de pruebas
 * Bad, because Si se añaden nuevas estadísticas, la clase puede volverse demasiado compleja
