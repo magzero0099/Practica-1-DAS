@@ -15,12 +15,12 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Considered Options
 
-* Patrón adapter
+* Patrón Adapter
 * Patrón Singleton
 
 ## Decision Outcome
 
-Chosen option: "Patrón Singleton", because garantiza que exista una única instancia de conexión al sistema de almacenamiento, centralizando la gestión de los clientes y pedidos almacenados.
+Chosen option: "Patrón Singleton", because Garantiza que exista una única instancia de conexión al sistema de almacenamiento, centralizando la gestión de los clientes y pedidos almacenados.
 
 ### Positive Consequences
 
@@ -32,7 +32,7 @@ Chosen option: "Patrón Singleton", because garantiza que exista una única inst
 
 ## Pros and Cons of the Options
 
-### Patrón adapter
+### Patrón Adapter
 
 Patrón de diseño estructural que permite comunicar el sistema de almacenamiento con nuestra aplicación a través de una interfaz.
 

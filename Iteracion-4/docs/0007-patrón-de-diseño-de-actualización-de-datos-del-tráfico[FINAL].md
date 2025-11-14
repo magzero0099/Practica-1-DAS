@@ -14,12 +14,11 @@ La aplicación recibe y manipula datos de tráfico en tiempo real desde un servi
 
 ## Considered Options
 
-* Patrón facade
-* Patrón observer
+* Patrón Observer
 
 ## Decision Outcome
 
-Chosen option: "Patrón observer", because Permite que nuestra aplicación reaccione automáticamente cuando llegan nuevos datos de tráfico en tiempo real
+Chosen option: "Patrón Observer", because Permite que nuestra aplicación reaccione automáticamente cuando llegan nuevos datos de tráfico en tiempo real
 
 ### Positive Consequences
 
@@ -27,7 +26,7 @@ Chosen option: "Patrón observer", because Permite que nuestra aplicación reacc
 
 ## Pros and Cons of the Options
 
-### Patrón observer
+### Patrón Observer
 
 Patrón de diseño de comportamiento que permite que diferentes partes del sistema se mantengan actualizadas automáticamente cuando se reciben datos del tráfico.
 

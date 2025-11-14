@@ -14,11 +14,12 @@ La aplicación recibe y manipula datos de tráfico en tiempo real desde un servi
 
 ## Considered Options
 
-* Patrón adapter
+* Patrón Adapter
+* Patrón Facade
 
 ## Decision Outcome
 
-Chosen option: "Patrón adapter", because Adapta el formato de los datos proporcionados por el servicio externo a nuestro modelo interno de datos
+Chosen option: "Patrón Adapter", because Adapta el formato de los datos proporcionados por el servicio externo a nuestro modelo interno de datos
 
 ### Positive Consequences
 
@@ -27,7 +28,7 @@ Chosen option: "Patrón adapter", because Adapta el formato de los datos proporc
 
 ## Pros and Cons of the Options
 
-### Patrón adapter
+### Patrón Adapter
 
 Patrón de diseño que permite adaptar el formato de datos del servicio externo al de nuestro sistema.
 
@@ -35,7 +36,7 @@ Patrón de diseño que permite adaptar el formato de datos del servicio externo 
 * Good, because Es compatible con el uso de un patrón observer para recibir la información del servicio externo.
 * Bad, because Hay que mantener más codigo.
 
-### Patrón facade
+### Patrón Facade
 
 Patrón de diseño que proporciona una interfaz simplificada a una biblioteca con muchas funciones
 

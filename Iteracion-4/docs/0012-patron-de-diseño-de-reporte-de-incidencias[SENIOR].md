@@ -26,13 +26,9 @@ Chosen option: "Patrón command", because El patrón Command permite encapsular 
 * Permite guardar copias de las incidencias en registros para el futuro
 * Permite almacenar las incidencias si es necesario hasta que el servicio vuelva a estar disponible
 
-### Negative Consequences
-
-* Requiere
-
 ## Pros and Cons of the Options
 
-### Patrón command
+### Patrón Command
 
 Patrón de diseño de comportamiento que convierte una operación en un objeto independiente que contiene la información de dicha operación. En este caso sería la información de la incidencia.
 
@@ -40,9 +36,9 @@ Patrón de diseño de comportamiento que convierte una operación en un objeto i
 * Good, because Se pueden validar incidencias antes de ejecutarlas.
 * Bad, because Si las incidencias se ponen en cola, puede que su ejecución no sea inmediata.
 
-### Patrón chain of responsibilities
+### Patrón Chain of Responsibility
 
-Patrón de diseño que 
+Patrón de diseño que crea una cadena de manejadores que pueden procesar o pasar a la siguiente.
 
 * Good, because Garantiza que no se pierdan las incidencias a pesar de ocurrir un fallo en el servidor, ya que puede ser reenviada.
 * Good, because Se pueden validar incidencias antes de ejecutarlas.

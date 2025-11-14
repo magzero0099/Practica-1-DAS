@@ -15,12 +15,12 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Considered Options
 
-* Patrón adapter
+* Patrón Adapter
 * Patrón Singleton
 
 ## Decision Outcome
 
-Chosen option: "Patrón adapter", because Permite utilizar sistemas de almacenamiento que tengan cualquier formato ya que lo podremos adaptar a través de este patrón a nuestra aplicación.
+Chosen option: "Patrón Adapter", because Permite utilizar sistemas de almacenamiento que tengan cualquier formato ya que lo podremos adaptar a través de este patrón a nuestra aplicación.
 
 ### Positive Consequences
 
@@ -33,7 +33,7 @@ Chosen option: "Patrón adapter", because Permite utilizar sistemas de almacenam
 
 ## Pros and Cons of the Options
 
-### Patrón adapter
+### Patrón Adapter
 
 Patrón de diseño estructural que permite comunicar el sistema de almacenamiento con nuestra aplicación a través de una interfaz.
 

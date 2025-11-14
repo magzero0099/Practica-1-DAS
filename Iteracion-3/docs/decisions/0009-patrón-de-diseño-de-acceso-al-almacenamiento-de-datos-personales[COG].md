@@ -20,7 +20,7 @@ La aplicación almacenará los datos personales del cliente: ID, nombre, apellid
 
 ## Decision Outcome
 
-Chosen option: "Acceso a un singleton mediante proxy", because no requiere que el almacen de datos gestione el acceso ni los permisos manteniendo las ventajas de tener 1 único objeto de la base de datos en memoria
+Chosen option: "Acceso a un singleton mediante proxy", because No requiere que el almacen de datos gestione el acceso ni los permisos manteniendo las ventajas de tener 1 único objeto de la base de datos en memoria
 
 ### Positive Consequences
 

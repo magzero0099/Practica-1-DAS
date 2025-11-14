@@ -1,6 +1,6 @@
 # Adición-de-la-clase-Estadistica
 
-* Status: proposed
+* Status: accepted
 * Deciders: Marcos Hernández Martín, Daniel Hernanz Corral y Gonzalo Fernández de Córdoba García
 * Date: 2025-11-12
 

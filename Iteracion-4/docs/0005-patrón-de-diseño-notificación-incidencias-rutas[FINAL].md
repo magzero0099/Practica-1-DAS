@@ -1,6 +1,6 @@
 # Patrón de diseño notificación incidencias rutas
 
-* Status: Rejected
+* Status: rejected
 * Deciders: Rodrigo Fernández de Córdoba García, Daniel Hernanz Corral y Marcos Hernández Martín
 * Date: 2025-11-01
 
@@ -15,11 +15,11 @@ Además de la incidencia, se guardarán la fecha y hora y el estado de la incide
 
 ## Considered Options
 
-* Patrón observer
+* Patrón Observer
 
 ## Decision Outcome
 
-Chosen option: "Patrón observer", because Encaja perfectamente con la notificación y recepción de incidencias
+Chosen option: "Patrón Observer", because Encaja perfectamente con la notificación y recepción de incidencias
 
 ### Positive Consequences
 
@@ -27,7 +27,7 @@ Chosen option: "Patrón observer", because Encaja perfectamente con la notificac
 
 ## Pros and Cons of the Options
 
-### Patrón observer
+### Patrón Observer
 
 Patrón de diseño de comportamiento que permite lanzar notificaciones para que la reciban los suscriptores que estén interesados.
 

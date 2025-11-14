@@ -1,6 +1,6 @@
 # Diseño del Área de planificación de reparto y rutas
 
-* Status: proposed
+* Status: accepted
 * Deciders: Marcos Hernandez, Daniel Hernanz Corral
 * Date: 2025-11-13
 

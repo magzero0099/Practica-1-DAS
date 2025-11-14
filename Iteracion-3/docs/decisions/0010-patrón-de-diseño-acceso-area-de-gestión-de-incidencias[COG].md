@@ -14,11 +14,11 @@ La aplicación implementará un área de gestión de rutas e incidencias, a la c
 
 ## Considered Options
 
-* Patrón proxy
+* Patrón Proxy
 
 ## Decision Outcome
 
-Chosen option: "Patrón proxy", because permite controlar el acceso al área de gestión, limitando el acceso solo a los gestores de incidencias.
+Chosen option: "Patrón Proxy", because Permite controlar el acceso al área de gestión, limitando el acceso solo a los gestores de incidencias.
 
 ### Positive Consequences
 
@@ -30,7 +30,7 @@ Chosen option: "Patrón proxy", because permite controlar el acceso al área de 
 
 ## Pros and Cons of the Options
 
-### Patrón proxy
+### Patrón Proxy
 
 Patrón de diseño estructural que proporciona un sustituto o marcador de posición para otro objeto. El patrón permite controlar el acceso al objeto original
 

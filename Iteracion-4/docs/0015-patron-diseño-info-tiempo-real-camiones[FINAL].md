@@ -19,7 +19,7 @@ En el módulo de estadísticas, se necesita que los clientes que se conecten rec
 
 ## Decision Outcome
 
-Chosen option: "Patrón Publish-Subscriber", because permite notificar cambios en la ubicación, tiempo que le falta para llegar a destino, y el número de pedidos que les faltan por entregar a los camiones; así como la fase en la que se encuentran los pedidos, todo ello en tiempo real, y desde sistemas separados.
+Chosen option: "Patrón Publish-Subscriber", because Permite notificar cambios en la ubicación, tiempo que le falta para llegar a destino, y el número de pedidos que les faltan por entregar a los camiones; así como la fase en la que se encuentran los pedidos, todo ello en tiempo real, y desde sistemas separados.
 
 ### Positive Consequences
 
@@ -35,4 +35,4 @@ Patrón de diseño de comportamiento que permite notificar en tiempo real inform
 
 * Good, because Los clientes reciben información en tiempo real acerca de los camiones y del estado del pedido sin necesidad de realizar consultas constantes.
 * Bad, because Si se conectan muchos clientes al módulo de estadisticas, puede haber demasiados suscriptores que saturen el sistema.
-* Bad, because si se producen demasiados cambios de ruta o entregas se puede saturar el sistema de notificaciones.
+* Bad, because Si se producen demasiados cambios de ruta o entregas se puede saturar el sistema de notificaciones.

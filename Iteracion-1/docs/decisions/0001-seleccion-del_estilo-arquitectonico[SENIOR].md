@@ -36,7 +36,7 @@ Chosen option: "Estilo por Microservicios", because Dentro de nuestro contexto, 
 
 ### Estilo Orientado a Servicios
 
-Arquitectura que separa las diferentes funciones del sistema en servicios, con baja acoplación y capacidad de coumincación entre servicios.
+Arquitectura que separa las diferentes funciones del sistema en servicios, con baja acoplación y capacidad de comunicación entre servicios.
 
 * Good, because La lógica de negocio del sistema se divide en diferentes áreas, que pueden establecerse como servicios.
 * Good, because Independencia de cada servicio con el resto del sistema, incluyendo recursos o infraestructura.
@@ -50,7 +50,7 @@ División de la lógica de negocio en servicios muy pequeños.
 
 * Good, because La lógica de negocio de nuetro contexto se puede dividir en microservicios, incluso las diferentes áreas de las que el enunciado habla pueden subdividirse en microservicios en lugar de hacer una correspondencia directa área-servicio.
 * Good, because Muy sencillo añadir nuevos servicios o módulos
-* Good, because los errores son aislados al estar las funciones de la lógica de negocio separadas en microservicios.
+* Good, because Los errores son aislados al estar las funciones de la lógica de negocio separadas en microservicios.
 * Bad, because Comunicación con terceros complicada: cada microservicio debe integrarse con el servicio de terceros o incluso necesitarse un microservicio dedicado a la comunicación externa.
 
 ### Estilo Cliente-Servidor
